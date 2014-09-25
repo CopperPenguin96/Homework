@@ -1,0 +1,8 @@
+C:\Users\Alex\Documents\Visual Studio 2012\Projects\Homework\HWLib\obj\Debug\HWLib.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\Visual Studio 2012\Projects\Homework\HWLib\bin\Debug\HWLib.dll
+C:\Users\Alex\Documents\Visual Studio 2012\Projects\Homework\HWLib\bin\Debug\HWLib.pdb
+C:\Users\Alex\Documents\Visual Studio 2012\Projects\Homework\HWLib\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alex\Documents\Visual Studio 2012\Projects\Homework\HWLib\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Alex\Documents\Visual Studio 2012\Projects\Homework\HWLib\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Alex\Documents\Visual Studio 2012\Projects\Homework\HWLib\obj\Debug\HWLib.dll
+C:\Users\Alex\Documents\Visual Studio 2012\Projects\Homework\HWLib\obj\Debug\HWLib.pdb
