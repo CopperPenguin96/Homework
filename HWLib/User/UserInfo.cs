@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HWLib
+namespace HWLib.User
 {
-    class UserInfo
+    public class UserInfo
     {
         public String userName()
         {
