@@ -1,13 +1,14 @@
-﻿using System;
+﻿using HWLib.User;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HWLib.User
+namespace HWLib
 {
-    class Constants
+    public class Constants
     {
         /// <summary>
         /// The default path of the application files
@@ -17,6 +18,7 @@ namespace HWLib.User
         /// The directory where the Courses are installed
         /// </summary>
         public static String coursePath = pathName + "Courses/";
+        public static String assignmentPath = pathName + "Assignments/";
         /// <summary>
         /// Course JSON files
         /// </summary>

@@ -44,8 +44,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="Assignments\Assignment.cs" />
     <Compile Include="User\Class.cs" />
-    <Compile Include="User\Constants.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="User\JSON.cs" />
     <Compile Include="User\UserInfo.cs" />
   </ItemGroup>
