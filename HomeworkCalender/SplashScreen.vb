@@ -49,14 +49,12 @@ Public NotInheritable Class SplashScreen
             currentFile += 1
         ElseIf currentFile = 5 OrElse currentFile <= 7 Then
             currentFile += 1
-            'TODO
-            'Rename Form1 to UserInfo Form
             If needsUserInfo Then
                 Form1.Show()
             ElseIf needsCourses Then
-                'Courses.show()
+                COurses.Show()
             Else
-                'Show MainForm
+                MainForm.Show()
             End If
             Me.Hide()
         End If
