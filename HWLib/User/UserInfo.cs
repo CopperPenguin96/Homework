@@ -8,27 +8,27 @@ namespace HWLib.User
 {
     public class UserInfo
     {
-        public String userName()
+        public String getUserName()
         {
             //Read from JSON
             return null;
         }
 
-        public short age()
+        public short getAge()
         {
             //Read from JSON
             return 0;
         }
 
-        public short classCount()
+        public short getClassCount()
         {
             //Read from JSON
             return 0;
         }
 
-        public Class[] userClasses()
+        public Class[] getUserClasses()
         {
-            Class[] returnValue = new Class[classCount()];
+            Class[] returnValue = new Class[getClassCount()];
             //Read from JSON
             return returnValue;
         }

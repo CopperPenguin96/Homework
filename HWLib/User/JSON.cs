@@ -35,7 +35,7 @@ namespace HWLib.User
         /// Writes to the User Info JSON File
         /// </summary>
         /// <param name="ui">UserInfo object</param>
-        public static void writeUserInfoJson(UserInfo ui)
+        public static void writeUserInfoJson(UserObj ui)
         {
             String userInfoJSON = JsonConvert.SerializeObject(ui);
             File.WriteAllText(Constants.infoJSON, userInfoJSON);

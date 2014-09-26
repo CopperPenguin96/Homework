@@ -1,5 +1,7 @@
-﻿Public Class Form1
+﻿Imports HWLib
+Imports HWLib.User
 
+Public Class Form1
     Private Sub txtUsername_TextChanged(sender As Object, e As EventArgs) Handles txtUsername.TextChanged
         If txtUsername.Text.Length < getMin("Username") OrElse txtUsername.Text.Length > getMax("Username") Then
             lblUserName.ForeColor = Color.Red
@@ -92,6 +94,11 @@
             End Try
         End Try
         If strMsgBox.Equals(strFinal) Then
+            Dim ui As UserObj = New UserObj()
+            ui.userName = Me.txtUsername.Text
+            ui.age = Short.Parse(Me.txtAge.Text)
+            ui.classCount = Short.Parse(Me.txtClassCount.Text)
+            User.JSON.writeUserInfoJson(ui)
             COurses.Show() 'Pardon the COurses.vb Goof up. I don't want to mess with it
         Else
             MsgBox(strMsgBox) 'There had to be errors. They need to fix them

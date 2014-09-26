@@ -26,10 +26,10 @@ namespace HWLib
         public static String[] courseFiles()
         {
             UserInfo ui = new UserInfo();
-            String[] returnArray = new String[ui.classCount()];
+            String[] returnArray = new String[ui.getClassCount()];
             for (int loopClasses = 1; loopClasses <= returnArray.Length; loopClasses++)
             {
-                returnArray[loopClasses] = pathName + ui.userClasses()[loopClasses].name() + ".json";
+                returnArray[loopClasses] = pathName + ui.getUserClasses()[loopClasses].name() + ".json";
             }
             return returnArray;
         }
