@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace HWLib.JSON
 {
-    public class ClassParser
+    public class SystemInfoWriter
     {
-        
     }
 }

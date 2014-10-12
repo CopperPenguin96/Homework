@@ -8,6 +8,12 @@ namespace HWLib.JSON
 {
     public class Files
     {
-        public static String filePath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "Homework";
+        public static String filePath = "JSON/";
+        public static String[] JSONFiles = new String[] 
+        {
+            filePath + "userInfo.json",
+            filePath + "courses.json",
+            filePath + "systemInfo.json"
+        };
     }
 }
