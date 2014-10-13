@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HWLib.JSON
+namespace HWLib.Objects.Assignments
 {
-    public class SystemInfoWriter
+    public enum Action
     {
+        AddNew,
+        AddExisting,
+        Delete
     }
 }

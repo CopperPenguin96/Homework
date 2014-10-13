@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\bin\release\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -24,7 +24,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\bin\release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -34,8 +34,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="OSVersionInfo">
+      <HintPath>..\OSVersionInfo.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,16 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Errors\CrashReport.cs" />
+    <Compile Include="Errors\CrashReports.cs" />
+    <Compile Include="Font.cs" />
     <Compile Include="JSON\CourseWriter.cs" />
     <Compile Include="JSON\CourseReader.cs" />
     <Compile Include="JSON\Files.cs" />
     <Compile Include="JSON\UserInfoReader.cs" />
+    <Compile Include="JSON\UserInfoWriter.cs" />
+    <Compile Include="Objects\Assignments\Action.cs" />
+    <Compile Include="Objects\Assignments\AssignmentTypes.cs" />
     <Compile Include="Objects\Course.cs" />
+    <Compile Include="JSON\SystemInfo.cs" />
+    <Compile Include="Objects\UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Version.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Objects\Assignments\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

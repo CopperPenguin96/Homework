@@ -1,0 +1,15 @@
+C:\Users\Alex\Documents\GitHub\Homework\bin\release\HomeworkCalendar.exe.config
+C:\Users\Alex\Documents\GitHub\Homework\bin\release\HomeworkCalendar.exe
+C:\Users\Alex\Documents\GitHub\Homework\bin\release\HomeworkCalendar.pdb
+C:\Users\Alex\Documents\GitHub\Homework\bin\release\HomeworkCalendar.xml
+C:\Users\Alex\Documents\GitHub\Homework\HomeworkCalendar\obj\Release\HomeworkCalendar.vbprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\Homework\HomeworkCalendar\obj\Release\HomeworkCalendar.Resources.resources
+C:\Users\Alex\Documents\GitHub\Homework\HomeworkCalendar\obj\Release\HomeworkCalendar.vbproj.GenerateResource.Cache
+C:\Users\Alex\Documents\GitHub\Homework\HomeworkCalendar\obj\Release\HomeworkCalendar.exe
+C:\Users\Alex\Documents\GitHub\Homework\HomeworkCalendar\obj\Release\HomeworkCalendar.xml
+C:\Users\Alex\Documents\GitHub\Homework\HomeworkCalendar\obj\Release\HomeworkCalendar.pdb
+C:\Users\Alex\Documents\GitHub\Homework\HomeworkCalendar\obj\Release\HomeworkCalendar.CourseForm.resources
+C:\Users\Alex\Documents\GitHub\Homework\HomeworkCalendar\obj\Release\HomeworkCalendar.UserInfoForm.resources
+C:\Users\Alex\Documents\GitHub\Homework\HomeworkCalendar\obj\Release\HomeworkCalendar.MainForm.resources
+C:\Users\Alex\Documents\GitHub\Homework\HomeworkCalendar\obj\Release\HomeworkCalendar.TypeSelection.resources
+C:\Users\Alex\Documents\GitHub\Homework\HomeworkCalendar\obj\Release\HomeworkCalendar.AddTypeForm.resources

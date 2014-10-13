@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,5 +16,12 @@ namespace HWLib.JSON
             filePath + "courses.json",
             filePath + "systemInfo.json"
         };
+        public static void createDirectoryIfNeeded()
+        {
+            if (!Directory.Exists(filePath))
+            {
+                Directory.CreateDirectory(filePath);
+            }
+        }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HWLib.Objects;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -9,16 +11,10 @@ namespace HWLib.JSON
 {
     public class CourseReader
     {
-        public static bool Exists()
+        public static Course[] courses()
         {
-            if (!File.Exists(Files.JSONFiles[1]))
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+            String fileText = File.ReadAllText(Files.JSONFiles[1]);
+            return JsonConvert.DeserializeObject<Course[]>(fileText);
         }
     }
 }
