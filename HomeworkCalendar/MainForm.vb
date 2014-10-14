@@ -23,8 +23,14 @@ Public Class MainForm
         newType.ShowDialog()
     End Sub
     Sub LoadContent()
+        lboClasses.Items.Clear()
         For Each classes As Course In CourseReader.courses
-            lboClasses.Items.Add(classes)
+            Try
+                lboClasses.Items.Add(classes.name)
+            Catch ex As NullReferenceException
+                ' The first item in courses.json is always null
+                ' This prevents the application from reading it
+            End Try
         Next
     End Sub
 End Class

@@ -10,7 +10,18 @@ namespace HWLib.Objects.Assignments
 {
     public class Assignment
     {
-
+        public Assignment()
+        {
+            //Nothing - just nothing!
+        }
+        public Assignment(String IDentify, String nameIt, DueDate duePeriod, int pointsNeeded, bool Balloony)
+        {
+            this.setID(IDentify);
+            this.setName(nameIt);
+            this.setDueDate(duePeriod);
+            this.setMaxPoints(pointsNeeded);
+            this.setShowBalloons(Balloony);
+        }
         #region ID
         private String ID;
         public virtual String getID()

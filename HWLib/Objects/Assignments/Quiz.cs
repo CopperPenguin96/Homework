@@ -8,6 +8,14 @@ namespace HWLib.Objects.Assignments
 {
     public class Quiz : Assignment
     {
+        public Quiz(String IDentify, String nameIt, DueDate duePeriod, int pointsNeeded, bool Balloony)
+        {
+            this.setID(IDentify);
+            this.setName(nameIt);
+            this.setDueDate(duePeriod);
+            this.setMaxPoints(pointsNeeded);
+            this.setShowBalloons(Balloony);
+        }
         #region Extension
         private String extension = ".quiz";
         public override string getExtension()

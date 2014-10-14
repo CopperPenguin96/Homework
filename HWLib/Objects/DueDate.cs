@@ -29,8 +29,8 @@ namespace HWLib.Objects
         }
         public static DueDate parseDueDate(String fullForm)
         {
-            int dayX = int.Parse(fullForm.Substring(0, 2));
-            int monthX = int.Parse(fullForm.Substring(3, 5));
+            int monthX = int.Parse(fullForm.Substring(0, 2));
+            int dayX = int.Parse(fullForm.Substring(3, 5));
             int yearX = int.Parse(fullForm.Substring(6));
             DueDate returnedValue = new DueDate
             {

@@ -9,6 +9,14 @@ namespace HWLib.Objects.Assignments
 {
     public class Project : Assignment
     {
+        public Project(String IDentify, String nameIt, DueDate duePeriod, int pointsNeeded, bool Balloony)
+        {
+            this.setID(IDentify);
+            this.setName(nameIt);
+            this.setDueDate(duePeriod);
+            this.setMaxPoints(pointsNeeded);
+            this.setShowBalloons(Balloony);
+        }
         #region Extension
         private String extension = ".project";
         public override string getExtension()

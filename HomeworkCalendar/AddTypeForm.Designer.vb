@@ -25,7 +25,7 @@ Partial Class AddTypeForm
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddTypeForm))
         Me.picType = New System.Windows.Forms.PictureBox()
         Me.lblName = New System.Windows.Forms.Label()
-        Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
+        Me.Calendar = New System.Windows.Forms.MonthCalendar()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.lblPoints = New System.Windows.Forms.Label()
         Me.numPoints = New System.Windows.Forms.NumericUpDown()
@@ -53,11 +53,12 @@ Partial Class AddTypeForm
         Me.lblName.TabIndex = 1
         Me.lblName.Text = "Name"
         '
-        'MonthCalendar1
+        'Calendar
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(329, 130)
-        Me.MonthCalendar1.Name = "MonthCalendar1"
-        Me.MonthCalendar1.TabIndex = 2
+        Me.Calendar.Location = New System.Drawing.Point(329, 130)
+        Me.Calendar.MaxSelectionCount = 1
+        Me.Calendar.Name = "Calendar"
+        Me.Calendar.TabIndex = 2
         '
         'txtName
         '
@@ -113,7 +114,7 @@ Partial Class AddTypeForm
         Me.Controls.Add(Me.numPoints)
         Me.Controls.Add(Me.lblPoints)
         Me.Controls.Add(Me.txtName)
-        Me.Controls.Add(Me.MonthCalendar1)
+        Me.Controls.Add(Me.Calendar)
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.picType)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -127,7 +128,7 @@ Partial Class AddTypeForm
     End Sub
     Friend WithEvents picType As System.Windows.Forms.PictureBox
     Friend WithEvents lblName As System.Windows.Forms.Label
-    Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
+    Friend WithEvents Calendar As System.Windows.Forms.MonthCalendar
     Friend WithEvents txtName As System.Windows.Forms.TextBox
     Friend WithEvents lblPoints As System.Windows.Forms.Label
     Friend WithEvents numPoints As System.Windows.Forms.NumericUpDown
