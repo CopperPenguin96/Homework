@@ -18,9 +18,31 @@ Public Class TypeSelection
             Return Nothing
         End If
     End Function
-
-    Private Sub btnAssignment_Click(sender As Object, e As EventArgs) Handles btnAssignment.Click
-        Dim addType As AddTypeForm = New AddTypeForm(AssignmentTypes.Assignment)
+    Sub StartForm(type As AssignmentTypes)
+        Dim addType As AddTypeForm = New AddTypeForm(type)
         addType.ShowDialog()
+    End Sub
+    Private Sub btnAssignment_Click(sender As Object, e As EventArgs) Handles btnAssignment.Click
+        StartForm(AssignmentTypes.Assignment)
+    End Sub
+
+    Private Sub btnHomework_Click(sender As Object, e As EventArgs) Handles btnHomework.Click
+        StartForm(AssignmentTypes.Homework)
+    End Sub
+
+    Private Sub btnProject_Click(sender As Object, e As EventArgs) Handles btnProject.Click
+        StartForm(AssignmentTypes.Project)
+    End Sub
+
+    Private Sub btnTest_Click(sender As Object, e As EventArgs) Handles btnTest.Click
+        StartForm(AssignmentTypes.Test)
+    End Sub
+
+    Private Sub btnQuiz_Click(sender As Object, e As EventArgs) Handles btnQuiz.Click
+        StartForm(AssignmentTypes.Quiz)
+    End Sub
+
+    Private Sub btnFinal_Click(sender As Object, e As EventArgs) Handles btnFinal.Click
+        StartForm(AssignmentTypes.Final)
     End Sub
 End Class

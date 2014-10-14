@@ -62,6 +62,7 @@ Public Class UserInfoForm
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         HWLib.Font.downloadFontIfNeeded()
+        'HWLib.Objects.Assignments.Files.
         HWLib.JSON.Files.createDirectoryIfNeeded()
         If File.Exists(Files.JSONFiles(0)) Then
             If Not File.Exists(Files.JSONFiles(1)) Then
