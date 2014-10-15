@@ -45,4 +45,7 @@ Public Class TypeSelection
     Private Sub btnFinal_Click(sender As Object, e As EventArgs) Handles btnFinal.Click
         StartForm(AssignmentTypes.Final)
     End Sub
+
+    Private Sub TypeSelection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    End Sub
 End Class

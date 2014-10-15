@@ -7,6 +7,7 @@ Public Class MainForm
         UserInfoForm.Close()
         CourseForm.Close()
         LoadContent()
+        HWLib.Objects.Assignments.Files.createDirectoriesIfNeeded()
     End Sub
     Private Sub btnNew_Click(sender As Object, e As EventArgs) Handles btnNew.Click
         Dim newType As TypeSelection = New TypeSelection(HWLib.Objects.Assignments.Action.AddNew)

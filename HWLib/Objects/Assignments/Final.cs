@@ -8,6 +8,10 @@ namespace HWLib.Objects.Assignments
 {
     public class Final : Assignment
     {
+        public override string getDateType()
+        {
+            return "TestDate";
+        }
         public Final(String IDentify, String nameIt, DueDate duePeriod, int pointsNeeded, bool Balloony)
         {
             this.setID(IDentify);
@@ -20,13 +24,18 @@ namespace HWLib.Objects.Assignments
         private String extension = ".final";
         public override string getExtension()
         {
-            return extension;
+            return this.extension;
         }
         #endregion
 
         public override int ResponseInt()
         {
             return 5;
+        }
+
+        public override string file()
+        {
+            return Files.seperatepaths[ResponseInt()] + this.getName() + extension;
         }
     }
 }

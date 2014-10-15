@@ -21,13 +21,18 @@ namespace HWLib.Objects.Assignments
         private String extension = ".homework";
         public override string getExtension()
         {
-            return extension;
+            return this.extension;
         }
         #endregion
 
         public override int ResponseInt()
         {
             return 1;
+        }
+
+        public override string file()
+        {
+            return Files.seperatepaths[ResponseInt()] + this.getName() + extension;
         }
     }
 }

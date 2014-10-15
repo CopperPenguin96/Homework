@@ -65,6 +65,26 @@ Public Class AddTypeForm
                     Dim assignment As New Assignment(IDGenerator.getRandomID(Base.Assignment), txtName.Text, _
                                                      sDate, numPoints.Value, chkBalloon.Checked)
                     assignment.Save()
+                Case AssignmentTypes.Final
+                    Dim final As New Final(IDGenerator.getRandomID(Base.Final), txtName.Text, _
+                                           sDate, numPoints.Value, chkBalloon.Checked)
+                    final.Save()
+                Case AssignmentTypes.Homework
+                    Dim homework As New Homework(IDGenerator.getRandomID(Base.Homework), txtName.Text, _
+                                                 sDate, numPoints.Value, chkBalloon.Checked)
+                    homework.Save()
+                Case AssignmentTypes.Project
+                    Dim project As New Project(IDGenerator.getRandomID(Base.Project), txtName.Text, _
+                                               sDate, numPoints.Value, chkBalloon.Checked)
+                    project.Save()
+                Case AssignmentTypes.Quiz
+                    Dim quiz As New Quiz(IDGenerator.getRandomID(Base.Quiz), txtName.Text, _
+                                         sDate, numPoints.Value, chkBalloon.Checked)
+                    quiz.Save()
+                Case AssignmentTypes.Test
+                    Dim test As New Test(IDGenerator.getRandomID(Base.Test), txtName.Text, _
+                                         sDate, numPoints.Value, chkBalloon.Checked)
+                    test.Save()
             End Select
         End If
     End Sub
@@ -82,7 +102,8 @@ Public Class AddTypeForm
         End If
         Dim selectedDate As Objects.DueDate = _
             Objects.DueDate.parseDueDate(Calendar.SelectionRange.ToString.Substring(23, 33).Substring(0, 10))
-        If selectedDate.Equals(todaysDate) Then
+        If selectedDate.month = todaysDate.month AndAlso selectedDate.day = todaysDate.day AndAlso _
+            selectedDate.year = todaysDate.year Then
             errors += "You need to select a date that is not today!" & (Chr(13))
         End If
         If todaysDate.year <> 2014 Then
@@ -92,7 +113,7 @@ Public Class AddTypeForm
                 errors += "Select a date that is not in the past!" & (Chr(13))
             Else
                 If todaysDate.month = selectedDate.month Then
-                    If todaysDate.day < selectedDate.day Then
+                    If todaysDate.day > selectedDate.day Then
                         errors += "Select a date that is not in the past!" & (Chr(13))
                     End If
                 End If
@@ -104,4 +125,8 @@ Public Class AddTypeForm
             Return False ' There were no errors
         End If
     End Function
+
+    Private Sub InvalidCharacters_Tick(sender As Object, e As EventArgs) Handles InvalidCharacters.Tick
+        txtName.Text = System.Text.RegularExpressions.Regex.Replace(txtName.Text, "[^a-zA-Z0-9]", " ")
+    End Sub
 End Class

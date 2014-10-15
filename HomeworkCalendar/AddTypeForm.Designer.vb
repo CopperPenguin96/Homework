@@ -22,6 +22,7 @@ Partial Class AddTypeForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddTypeForm))
         Me.picType = New System.Windows.Forms.PictureBox()
         Me.lblName = New System.Windows.Forms.Label()
@@ -31,6 +32,7 @@ Partial Class AddTypeForm
         Me.numPoints = New System.Windows.Forms.NumericUpDown()
         Me.chkBalloon = New System.Windows.Forms.CheckBox()
         Me.btnSave = New System.Windows.Forms.Button()
+        Me.InvalidCharacters = New System.Windows.Forms.Timer(Me.components)
         CType(Me.picType, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.numPoints, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -104,6 +106,11 @@ Partial Class AddTypeForm
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = False
         '
+        'InvalidCharacters
+        '
+        Me.InvalidCharacters.Enabled = True
+        Me.InvalidCharacters.Interval = 1
+        '
         'AddTypeForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -134,4 +141,5 @@ Partial Class AddTypeForm
     Friend WithEvents numPoints As System.Windows.Forms.NumericUpDown
     Friend WithEvents chkBalloon As System.Windows.Forms.CheckBox
     Friend WithEvents btnSave As System.Windows.Forms.Button
+    Friend WithEvents InvalidCharacters As System.Windows.Forms.Timer
 End Class

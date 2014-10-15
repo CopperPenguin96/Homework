@@ -9,7 +9,7 @@ namespace HWLib.Objects.Assignments
 {
     public class Files
     {
-        public static String AssignmentPath = "/Assignments/";
+        public static String AssignmentPath = "Assignments/";
         public static String[] seperatepaths = new String[]
         {
             AssignmentPath + "Assignments/",

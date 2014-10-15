@@ -97,7 +97,7 @@ namespace HWLib.Objects.Assignments
         }
         public virtual String file()
         {
-            return Files.seperatepaths[0] + name + extension;
+            return Files.seperatepaths[ResponseInt()] + name + extension;
         }
         public virtual void loadFromFile(String identification)
         {
@@ -129,16 +129,30 @@ namespace HWLib.Objects.Assignments
         #endregion
 
         #region Saving
+        public virtual String getDateType()
+        {
+            return "DueDate";
+        }
         public virtual void Save()
         {
-            String file = this.file();
-            if (File.Exists(file))
+            String fileDork = file();
+            if (File.Exists(fileDork))
             {
-                File.Delete(file);
+                File.Delete(fileDork);
             }
-            String fileText = JsonConvert.SerializeObject(this);
-            StreamWriter sWriter = File.CreateText(file);
-            sWriter.Write(fileText);
+            String[] textArray = new String[]
+            {
+                "ID: " + getID(),
+                "Name: " + getName(),
+                getDateType() + ": " + getDueDate().ToString(),
+                "MaxPoints: " + getMaxPoints(),
+                "Balloon: " + getShowBalloons()
+            };
+            StreamWriter sWriter = File.CreateText(fileDork);
+            foreach (String lines in textArray)
+            {
+                sWriter.WriteLine(lines);
+            }
             sWriter.Close();
         }
         #endregion
