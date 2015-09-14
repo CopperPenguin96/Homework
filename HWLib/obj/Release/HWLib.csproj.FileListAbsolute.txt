@@ -1,6 +1,0 @@
-C:\Users\Alex\Documents\GitHub\Homework\bin\release\HWLib.dll
-C:\Users\Alex\Documents\GitHub\Homework\bin\release\HWLib.pdb
-C:\Users\Alex\Documents\GitHub\Homework\HWLib\obj\Release\HWLib.dll
-C:\Users\Alex\Documents\GitHub\Homework\HWLib\obj\Release\HWLib.pdb
-C:\Users\Alex\Documents\GitHub\Homework\HWLib\obj\Release\HWLib.csprojResolveAssemblyReference.cache
-C:\Users\Alex\Documents\GitHub\Homework\bin\release\HWLib.dll.config
